@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MAD-SC-LOG</title>
+  <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: #CCCCCC;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 20px 30px;
+      margin: 20px;
+      border-radius: 20px;
+      /* Asegura que los elementos se distribuyan */
+      justify-content: space-between; 
+    }
+
+    header div { /* Nuevo contenedor para el logo y el título */
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    header h1::before {
+      content: "📊";
+      margin-right: 10px;
+      font-size: 28px;
+    }
+
+    /* Estilos del nuevo Icono de Descarga */
+    .download-icon {
+        color: white;
+        font-size: 30px; /* Tamaño del icono */
+        transition: color 0.3s, transform 0.3s;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+        /* Estilo para que parezca un botón elegante al pasar el ratón */
+    }
+
+    .download-icon:hover {
+        color: #ffc107; /* Color amarillo/dorado al pasar el ratón */
+        transform: scale(1.1); /* Ligero aumento de tamaño */
+        cursor: pointer;
+    }
+
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 20px 40px 20px;
+    }
+
+    iframe {
+      width: 90vw;
+      height: 90vh;
+      border: 2px solid #001f3f;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <img src="logo.png" alt="Logo">
+      <h1>MAD-SC-LOG</h1>
+    </div>
+
+        <a 
+      href="https://1drv.ms/x/c/a3d1fea0c2538ed3/EZPxpbd5VYtDituD0HHp7AMB2qgh3v3y3vjydrtglQ50kQ?e=UCoMJk" 
+      class="download-icon" 
+      title="Descargar Información"
+    >
+      <i class="fas fa-download"></i>
+    </a>
+  </header>
+
+  <div class="iframe-container">
+    <iframe 
+      src="https://app.powerbi.com/view?r=eyJrIjoiZDE4NTdjZGQtMjhiNy00NzUyLTkwMjUtNzhmODAyZTAwYjdkIiwidCI6IjE0Mzg0YTY2LWEwYWYtNDNjNC1iMDFhLTMxM2FjZjdhYzYyNiIsImMiOjR9" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    Información propiedad de JOBS SRL, sujeta a revisión.
+  </footer>
+
+</body>
+</html>
