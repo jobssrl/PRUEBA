@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MAD-NAC-LOG</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      background-color: #CCCCCC;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+```
+header {
+  display: flex;
+  align-items: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+header img {
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+header h1::before {
+  content: "📊";
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 20px 20px;
+}
+
+iframe {
+  width: 90vw;
+  height: 80vh;
+  border: 2px solid #001f3f;
+  border-radius: 12px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #0074D9, #001f3f);
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #001f3f, #0074D9);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin: 20px;
+}
+```
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>MAD-NAC-LOG</h1>
+  </header>
+
+  <div class="iframe-container">
+    <iframe 
+      src="https://app.powerbi.com/groups/396a93cb-1ac0-4caa-8bd9-39df47a0abc0/reports/2507d000-965a-459e-b8fa-ee07f2bd8250/0d09c69cfadba05d4d81?experience=power-bi" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="btn-container">
+    <a href="https://1drv.ms/x/c/a3d1fea0c2538ed3/EZPxpbd5VYtDituD0HHp7AMB2qgh3v3y3vjydrtglQ50kQ?e=uOCgs3" 
+       target="_blank" 
+       class="download-btn">
+       📥 Descargar información
+    </a>
+  </div>
+
+  <footer>
+    Información propiedad de JOBS SRL, sujeta a revisión.
+  </footer>
+
+</body>
+</html>
