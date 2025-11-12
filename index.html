@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAD NACIONAL</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            background-color: #CCCCCC;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Fondo azul muy oscuro como en la imagen: #061933 o similar */
+            background-color: #061933; 
+            color: white;
+            padding: 15px 30px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- Estilo para simular el logo "Jobs" con texto --- */
+        .jobs-logo-text {
+            font-family: 'Brush Script MT', cursive, 'Segoe Script'; /* Fuente cursiva/script */
+            font-size: 40px; 
+            color: #00bcd4; /* Color turquesa de la imagen */
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        
+        .header-left h1 {
+            /* Título MAD NACIONAL */
+            font-size: 26px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- Estilo para el icono de la gráfica --- */
+        .chart-icon {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        /* El emoji de la gráfica que se parece al de la imagen */
+        .chart-icon::before {
+            content: "📊"; 
+        }
+
+
+        /* --- Estilos para el botón de descarga --- */
+        .download-button {
+            text-decoration: none;
+            /* Fondo del botón: azul oscuro ligeramente más claro que el header, como en la imagen */
+            background-color: #0d284a; 
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .download-button:hover {
+            background-color: #14355a;
+            transform: translateY(-1px);
+        }
+        
+        .download-button::before {
+            content: "⬇️";
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        .iframe-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 90vh;
+            border: 2px solid #001f3f;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            border-radius: 20px;
+            margin: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <span class="jobs-logo-text">Jobs</span>
+            
+            <h1>
+                <span class="chart-icon"></span> MAD NACIONAL
+            </h1>
+        </div>
+        
+        <a href="https://1drv.ms/x/c/a3d1fea0c2538ed3/IQAY-TKbQ5AJSpTMT4UT-1TVAUF-oEXCAAjSN3k84Ugv_bM?e=TpbgBp" target="_blank" class="download-button">
+            Descargar Excel
+        </a>
+    </header>
+
+    <div class="iframe-container">
+        <iframe 
+            src="https://app.powerbi.com/view?r=eyJrIjoiODBkYzYxMjEtNmZiYi00NWE2LWJhOGEtYjYyZTI1YmEzOWE5IiwidCI6IjE0Mzg0YTY2LWEwYWYtNDNjNC1iMDFhLTMxM2FjZjdhYzYyNiIsImMiOjR9" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <footer>
+        Información propiedad de JOBS SRL, sujeta a revisión.
+    </footer>
+
+</body>
+</html>
